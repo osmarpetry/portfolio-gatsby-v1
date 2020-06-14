@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       <header>
         <Navbar
           title="Osmar Petry"
-          subTitle="Some Cool Setense"
+          subTitle="Science is the door for the future"
           leftLinks={[
             { description: "My Blog", link: "/" },
             { description: "About me", link: "/about-me" },
