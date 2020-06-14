@@ -6,7 +6,7 @@ import Navbar from "../Navbar"
 
 import GlobalStyles from '../../styles/global'
 
-import { Main} from './styled'
+import { Main, Footer } from './styled'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -52,10 +52,9 @@ const Layout = ({ children }) => {
         }}
       >
         <Main>{children}</Main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer>
+          © Copyleft - All rights reversed. The internet is free and so is my content.
+        </Footer>
       </div>
     </>
   )

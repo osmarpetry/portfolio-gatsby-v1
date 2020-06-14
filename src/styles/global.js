@@ -627,12 +627,9 @@ pre tt:after {
 
 main {
   background: #002776;
-line-height: 1;
-font-size: 100%;
-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1;
+  font-size: 100%;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 `
 export default GlobalStyles
-
-
-
