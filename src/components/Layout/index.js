@@ -1,7 +1,8 @@
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+
+import Navbar from "../Navbar"
 
 import "./layout.css"
 
@@ -18,7 +19,24 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <header>header is there</header>
+      <header>
+        <Navbar
+          title="Osmar Petry"
+          subTitle="Some Cool Setense"
+          leftLinks={[
+            { description: "My Blog", link: "/" },
+            { description: "About me", link: "/about-me" },
+          ]}
+          rightLinks={[
+            { description: "Email", link: "mailto:osmarpetry@gmail.com" },
+            {
+              description: "Github",
+              link: "https://linkedin.com/in/osmarpetry",
+            },
+            { description: "Linkedin", link: "https://github.com/osmarpetry" },
+          ]}
+        />
+      </header>
       <div
         style={{
           margin: `0 auto`,
@@ -29,7 +47,6 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
-          {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
