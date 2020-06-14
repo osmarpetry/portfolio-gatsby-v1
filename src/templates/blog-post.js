@@ -8,16 +8,14 @@ import SEO from '../components/seo'
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
-  const next = pageContext.nextPost
-  const previous = pageContext.previousPost
 
-  const { frontmatter: { title, description, image, date}, html } = post
+  const { frontmatter: { title, description, date}, html } = post
 
   return (
     <Layout>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
+        title={title}
+        description={description}
       />
       <p>{date}</p>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
@@ -32,10 +30,9 @@ export const query = graphql`
         slug
       }
       frontmatter {
-        date(locale: "en-us", formatString: "MMMM DD YYYY")
+        date(locale: "en-us", formatString: "DD[th of] MMMM[,] YYYY")
       }
       html
-      timeToRead
     }
   }
 `

@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
 import BlogItem from '../components/BlogItem'
+import Pagination from '../components/Pagination'
 
 const IndexPage = props => {
   const { currentPage, numPages } = props.pageContext
@@ -25,7 +26,7 @@ const IndexPage = props => {
               slug
             }
             frontmatter {
-              date(locale: "en-us", formatString: "MMMM DD YYYY")
+              date(locale: "en-us", formatString: "DD[th of] MMMM[,] YYYY")
               description
               title
             }
@@ -55,6 +56,14 @@ const IndexPage = props => {
           />
         )
       )}
+      <Pagination
+        isFirst={isFirst}
+        isLast={isLast}
+        currentPage={currentPage}
+        numPages={numPages}
+        prevPage={prevPage}
+        nextPage={nextPage}
+      />
     </Layout>
   )
 }
