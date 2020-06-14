@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link as GatsbyLink } from 'gatsby'
 
 export const Nav = styled.nav`
   width: 100%;
@@ -15,12 +16,20 @@ export const SideLinksContainer = styled.ul`
   list-style-type: none;
 `
 
-export const Link = styled.a`
+const LinkStyled = `
   color: #ffffff;
   text-decoration: none;
   font-size: 24px;
   text-align: center;
   width: 100%;
+`
+
+export const Link = styled(GatsbyLink)`
+  ${LinkStyled}
+`
+
+export const LinkElement = styled.a`
+  ${LinkStyled}
 `
 
 export const Title = styled.h1`

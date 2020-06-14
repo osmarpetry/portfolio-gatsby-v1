@@ -1,26 +1,26 @@
 import React from "react"
 
-import { Nav, Link, Title, SideLinksContainer } from "./styled"
+import { Nav, Link, LinkElement, Title, SideLinksContainer } from "./styled"
 
 const Navbar = ({ title, subTitle, leftLinks, rightLinks }) => (
   <Nav>
     <SideLinksContainer>
       {leftLinks.map(({ description, link }) => (
         <li>
-          <Link href={link}>{description}</Link>
+          <Link to={link}>{description}</Link>
         </li>
       ))}
     </SideLinksContainer>
-    <Link href="/">
+    <Link to="/">
       <Title>{title}</Title>
       <span>{subTitle}</span>
     </Link>
     <SideLinksContainer>
       {rightLinks.map(({ description, link }) => (
         <li>
-          <Link href={link} target="_blank">
+          <LinkElement href={link} target="_blank">
             {description}
-          </Link>
+          </LinkElement>
         </li>
       ))}
     </SideLinksContainer>

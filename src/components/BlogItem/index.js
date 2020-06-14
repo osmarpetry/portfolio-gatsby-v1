@@ -7,7 +7,7 @@ const BlogItem = ({date, title, description, link}) => (
     <Date>{date}</Date>
     <Title>{title}</Title>
     <Description>{description}</Description>
-    <Link href={link}>Read ➜</Link>
+    <Link to={link}>Read ➜</Link>
   </BlogItemSection>
 )
 
