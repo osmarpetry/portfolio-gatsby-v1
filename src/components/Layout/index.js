@@ -4,7 +4,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "../Navbar"
 
-import "./layout.css"
+import GlobalStyles from '../../styles/global'
+
+import { Main} from './styled'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +21,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyles />
       <header>
         <Navbar
           title="Osmar Petry"
@@ -42,12 +45,13 @@ const Layout = ({ children }) => {
       </header>
       <div
         style={{
-          margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          display: 'flex',
+          flexDirection: 'column',
+          margin: '0 auto 0 auto'
         }}
       >
-        <main>{children}</main>
+        <Main>{children}</Main>
         <footer>
           © {new Date().getFullYear()}, Built with
           <a href="https://www.gatsbyjs.org">Gatsby</a>
