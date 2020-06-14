@@ -15,7 +15,10 @@ const IndexPage = props => {
 
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query PostList {
-      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+      allMarkdownRemark(
+        sort: { fields: frontmatter___date, order: DESC },
+        filter: {fields: { slug: { nin: "/about-me/"}}}
+      ) {
         edges {
           node {
             fields {
