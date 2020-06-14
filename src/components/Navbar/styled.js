@@ -7,11 +7,12 @@ export const Nav = styled.nav`
   margin-bottom: 60px;
 `
 
-export const SideLinksContainer = styled.div`
+export const SideLinksContainer = styled.ul`
   display: flex;
   justify-content: space-around;
   width: 100%;
   align-items: center;
+  list-style-type: none;
 `
 
 export const Link = styled.a`
