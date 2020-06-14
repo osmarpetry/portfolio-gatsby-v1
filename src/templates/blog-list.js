@@ -1,10 +1,10 @@
-/* eslint-disable react/prop-types */
 import React from "react"
-import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
+
+import BlogItem from '../components/BlogItem'
 
 const IndexPage = props => {
   const { currentPage, numPages } = props.pageContext
@@ -26,7 +26,6 @@ const IndexPage = props => {
               description
               title
             }
-            timeToRead
           }
         }
       }
@@ -45,12 +44,12 @@ const IndexPage = props => {
             fields: { slug },
           },
         }) => (
-          <div>
-            <a>{slug}</a>
-            <p>{date}</p>
-            <p>{title}</p>
-            <p>{description}</p>
-          </div>
+          <BlogItem
+            date={date}
+            title={title}
+            description={description}
+            link={slug}
+          />
         )
       )}
     </Layout>
