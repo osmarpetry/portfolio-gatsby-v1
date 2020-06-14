@@ -18,12 +18,8 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image}
       />
-      <p>{title}</p>
-      <p>{description}</p>
       <p>{date}</p>
-      <p>{image}</p>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>
   )
@@ -36,8 +32,6 @@ export const query = graphql`
         slug
       }
       frontmatter {
-        title
-        description
         date(locale: "en-us", formatString: "MMMM DD YYYY")
       }
       html
