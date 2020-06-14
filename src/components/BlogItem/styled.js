@@ -5,6 +5,7 @@ export const BlogItemSection = styled.section`
   border-radius: 10px;
   border: 1px solid black;
   padding: 20px;
+  margin-bottom: 20px;
 `
 
 export const Date = styled.p`
