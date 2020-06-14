@@ -4,8 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
-import BlogItem from '../components/BlogItem'
-import Pagination from '../components/Pagination'
+import BlogItem from "../components/BlogItem"
+import Pagination from "../components/Pagination"
 
 const IndexPage = props => {
   const { currentPage, numPages } = props.pageContext
@@ -16,10 +16,7 @@ const IndexPage = props => {
 
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query PostList {
-      allMarkdownRemark(
-        sort: { fields: frontmatter___date, order: DESC },
-        filter: {fields: { slug: { nin: "/about-me/"}}}
-      ) {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
             fields {
