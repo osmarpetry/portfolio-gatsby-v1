@@ -31,9 +31,12 @@ const Layout = ({ children }) => {
             { description: "Email", link: "mailto:osmarpetry@gmail.com" },
             {
               description: "Github",
+              link: "https://github.com/osmarpetry",
+            },
+            {
+              description: "Linkedin",
               link: "https://linkedin.com/in/osmarpetry",
             },
-            { description: "Linkedin", link: "https://github.com/osmarpetry" },
           ]}
         />
       </header>

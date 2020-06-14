@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: #002776;
 }
 body {
   margin: 0;
@@ -619,4 +620,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+main {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
 }

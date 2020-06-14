@@ -1,20 +1,26 @@
 import React from "react"
 
+import { Nav, Link, Title, SideLinksContainer } from "./styled"
+
 const Navbar = ({ title, subTitle, leftLinks, rightLinks }) => (
-  <nav>
-    {leftLinks.map(({ description, link }) => (
-      <a href={link}>{description}</a>
-    ))}
-    <a href="/">
-      <h1>{title}</h1>
+  <Nav>
+    <SideLinksContainer>
+      {leftLinks.map(({ description, link }) => (
+        <Link href={link}>{description}</Link>
+      ))}
+    </SideLinksContainer>
+    <Link href="/">
+      <Title>{title}</Title>
       <span>{subTitle}</span>
-    </a>
-    {rightLinks.map(({ description, link }) => (
-      <a href={link} target="_blank">
-        {description}
-      </a>
-    ))}
-  </nav>
+    </Link>
+    <SideLinksContainer>
+      {rightLinks.map(({ description, link }) => (
+        <Link href={link} target="_blank">
+          {description}
+        </Link>
+      ))}
+    </SideLinksContainer>
+  </Nav>
 )
 
 export default Navbar
