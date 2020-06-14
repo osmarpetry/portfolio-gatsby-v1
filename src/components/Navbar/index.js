@@ -6,7 +6,9 @@ const Navbar = ({ title, subTitle, leftLinks, rightLinks }) => (
   <Nav>
     <SideLinksContainer>
       {leftLinks.map(({ description, link }) => (
-        <Link href={link}>{description}</Link>
+        <li>
+          <Link href={link}>{description}</Link>
+        </li>
       ))}
     </SideLinksContainer>
     <Link href="/">
@@ -15,9 +17,11 @@ const Navbar = ({ title, subTitle, leftLinks, rightLinks }) => (
     </Link>
     <SideLinksContainer>
       {rightLinks.map(({ description, link }) => (
-        <Link href={link} target="_blank">
-          {description}
-        </Link>
+        <li>
+          <Link href={link} target="_blank">
+            {description}
+          </Link>
+        </li>
       ))}
     </SideLinksContainer>
   </Nav>
