@@ -3,7 +3,7 @@ import { Link as GatsbyLink } from 'gatsby'
 
 export const NavSection = styled.section`
   width: 100%;
-  min-height: 200px;
+  height: 100%;
 `
 
 const LinkStyled = `
