@@ -1,30 +1,19 @@
 import React from "react"
+import MediaQuery from 'react-responsive'
 
-import { Nav, Link, LinkElement, Title, SideLinksContainer } from "./styled"
+import { NavSection } from "./styled"
+import NavDefault from "./NavDefault"
+import NavMobile from "./NavMobile"
 
 const Navbar = ({ title, subTitle, leftLinks, rightLinks }) => (
-  <Nav>
-    <SideLinksContainer>
-      {leftLinks.map(({ description, link }) => (
-        <li>
-          <Link to={link}>{description}</Link>
-        </li>
-      ))}
-    </SideLinksContainer>
-    <Link to="/">
-      <Title>{title}</Title>
-      <span>{subTitle}</span>
-    </Link>
-    <SideLinksContainer>
-      {rightLinks.map(({ description, link }) => (
-        <li>
-          <LinkElement href={link} target="_blank">
-            {description}
-          </LinkElement>
-        </li>
-      ))}
-    </SideLinksContainer>
-  </Nav>
+  <NavSection>
+    <MediaQuery maxDeviceWidth={959}>
+      <NavMobile title={title} subTitle={subTitle} leftLinks={leftLinks} rightLinks={rightLinks} />
+    </MediaQuery>
+    <MediaQuery minDeviceWidth={960}>
+      <NavDefault  title={title} subTitle={subTitle} leftLinks={leftLinks} rightLinks={rightLinks} />
+    </MediaQuery>
+  </NavSection>
 )
 
 export default Navbar
