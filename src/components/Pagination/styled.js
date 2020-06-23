@@ -24,7 +24,7 @@ export const PaginationWrapper = styled.section`
   a:nth-child(2) {
     border-left: 0px;
   }
-  p  {
+  p {
     padding-top: 10px;
   }
 
@@ -33,5 +33,4 @@ export const PaginationWrapper = styled.section`
     justify-content: center;
     width: 100%;
   }
-
 `

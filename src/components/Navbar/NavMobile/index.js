@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import styled, { css } from "styled-components"
+import React, { useState } from 'react'
+import styled, { css } from 'styled-components'
 
-import NavButton from "./NavButton"
+import NavButton from './NavButton'
 
-import { Link, LinkElement } from "../styled"
+import { Link, LinkElement } from '../styled'
 
 const Nav = styled.nav`
   padding: 20px 20px 0 20px;

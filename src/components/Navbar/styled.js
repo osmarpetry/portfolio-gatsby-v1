@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 import { Link as GatsbyLink } from 'gatsby'
 
 export const NavSection = styled.section`
@@ -21,4 +21,3 @@ export const Link = styled(GatsbyLink)`
 export const LinkElement = styled.a`
   ${LinkStyled}
 `
-

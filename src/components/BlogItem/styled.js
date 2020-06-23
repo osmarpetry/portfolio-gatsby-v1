@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 import { Link as GatsbyLink } from 'gatsby'
 
 export const BlogItemSection = styled.section`

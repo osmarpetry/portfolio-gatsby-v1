@@ -1,17 +1,17 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Layout from '../components/Layout'
+import SEO from '../components/seo'
 
-import BlogItem from "../components/BlogItem"
-import Pagination from "../components/Pagination"
+import BlogItem from '../components/BlogItem'
+import Pagination from '../components/Pagination'
 
 const IndexPage = props => {
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
-  const prevPage = currentPage - 1 === 1 ? "/" : `/page/${currentPage - 1}`
+  const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`
   const nextPage = `/page/${currentPage + 1}`
 
   const { allMarkdownRemark } = useStaticQuery(graphql`

@@ -9,14 +9,14 @@ import SEO from '../components/seo'
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
 
-  const { frontmatter: { title, description, date}, html } = post
+  const {
+    frontmatter: { title, description, date },
+    html,
+  } = post
 
   return (
     <Layout>
-      <SEO
-        title={title}
-        description={description}
-      />
+      <SEO title={title} description={description} />
       <p>{date}</p>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>

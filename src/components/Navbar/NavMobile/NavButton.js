@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import styled from "styled-components"
+import React, { useState } from 'react'
+import styled from 'styled-components'
 
-import Close from "./../../../images/close.svg"
-import OpenMenu from "./../../../images/open-menu.svg"
+import Close from './../../../images/close.svg'
+import OpenMenu from './../../../images/open-menu.svg'
 
 const Button = styled.button`
   outline: none;
