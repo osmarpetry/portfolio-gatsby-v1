@@ -4,9 +4,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "../Navbar"
 
-import GlobalStyles from '../../styles/global'
+import GlobalStyles from "../../styles/global"
 
-import { Main, Footer } from './styled'
+import { Main, Footer } from "./styled"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <GlobalStyles />
       <header>
         <Navbar
@@ -43,20 +43,22 @@ const Layout = ({ children }) => {
           ]}
         />
       </header>
-      <div
+      <div>
+        <Main>{children}</Main>
+      </div>
+      <Footer
         style={{
-          maxWidth: 960,
-          display: 'flex',
-          flexDirection: 'column',
-          margin: '0 auto 0 auto'
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column-reverse",
         }}
       >
-        <Main>{children}</Main>
-        <Footer>
-          © Copyleft - All rights reversed. The internet is free and so is my content.
-        </Footer>
-      </div>
-    </>
+        <p style={{ margin: "20px 0 10px 20px" }}>
+          © Copyleft - All rights reversed. The internet is free and so is my
+          content.
+        </p>
+      </Footer>
+    </div>
   )
 }
 

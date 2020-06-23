@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

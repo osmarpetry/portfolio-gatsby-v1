@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import styled, { css } from "styled-components"
 
-import NavButton from './NavButton'
+import NavButton from "./NavButton"
 
-import { Link, LinkElement } from '../styled'
+import { Link, LinkElement } from "../styled"
 
 const Nav = styled.nav`
   padding: 20px 20px 0 20px;
@@ -22,19 +22,21 @@ const List = styled.ul`
   a {
     opacity: 0;
   }
-  ${({ open }) => open && css`
-    height: calc(100vh - 100px);
-    a {
-      opacity: 1;
-      font-size: 55px;
-    }
-    li {
-      padding-top: 50px;
-    }
-    li:first-child {
-      padding-top: 50px;
-    }
-  `}
+  ${({ open }) =>
+    open &&
+    css`
+      height: calc(100vh - 100px);
+      a {
+        opacity: 1;
+        font-size: 55px;
+      }
+      li {
+        padding-top: 50px;
+      }
+      li:first-child {
+        padding-top: 50px;
+      }
+    `}
 `
 
 const NavTitle = styled.h1`
@@ -52,7 +54,7 @@ const NavTitle = styled.h1`
   }
 `
 
-const NavMobile = ({ title, subTitle, leftLinks = [], rightLinks = []}) => {
+const NavMobile = ({ title, subTitle, leftLinks = [], rightLinks = [] }) => {
   const [openLinks, setOpenLinks] = useState(false)
 
   return (
@@ -67,12 +69,16 @@ const NavMobile = ({ title, subTitle, leftLinks = [], rightLinks = []}) => {
       <List open={openLinks}>
         {leftLinks.map(link => (
           <li>
-            <Link to={link.link}>{link.description}</Link>
+            <Link to={link.link} onClick={() => setOpenLinks(false)}>
+              {link.description}
+            </Link>
           </li>
         ))}
         {rightLinks.map(link => (
           <li>
-            <LinkElement to={link.link}>{link.description}</LinkElement>
+            <LinkElement to={link.link} onClick={() => setOpenLinks(false)}>
+              {link.description}
+            </LinkElement>
           </li>
         ))}
       </List>

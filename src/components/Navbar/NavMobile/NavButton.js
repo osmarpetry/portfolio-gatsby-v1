@@ -23,7 +23,6 @@ const NavButton = ({ onClick }) => {
     setClicked(!clicked)
     onClick()
   }
-  console.log(clicked)
 
   return (
     <>
