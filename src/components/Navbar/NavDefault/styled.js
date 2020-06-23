@@ -4,7 +4,7 @@ export const Nav = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 `
 
 export const SideLinksContainer = styled.ul`
