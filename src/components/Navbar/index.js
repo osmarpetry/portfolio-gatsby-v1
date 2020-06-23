@@ -1,5 +1,5 @@
 import React from "react"
-import MediaQuery from 'react-responsive'
+import Media from 'react-media';
 
 import { NavSection } from "./styled"
 import NavDefault from "./NavDefault"
@@ -7,12 +7,17 @@ import NavMobile from "./NavMobile"
 
 const Navbar = ({ title, subTitle, leftLinks, rightLinks }) => (
   <NavSection>
-    <MediaQuery maxDeviceWidth={959}>
-      <NavMobile title={title} subTitle={subTitle} leftLinks={leftLinks} rightLinks={rightLinks} />
-    </MediaQuery>
-    <MediaQuery minDeviceWidth={960}>
-      <NavDefault  title={title} subTitle={subTitle} leftLinks={leftLinks} rightLinks={rightLinks} />
-    </MediaQuery>
+    <Media queries={{
+        small: "(max-width: 959px)",
+        large: "(min-width: 960px)"
+      }}>
+        {({small, large}) => (
+          <>
+            {small && <NavMobile title={title} subTitle={subTitle} leftLinks={leftLinks} rightLinks={rightLinks} />}
+            {large && <NavDefault title={title} subTitle={subTitle} leftLinks={leftLinks} rightLinks={rightLinks} />}
+          </>
+        )}
+      </Media>
   </NavSection>
 )
 
