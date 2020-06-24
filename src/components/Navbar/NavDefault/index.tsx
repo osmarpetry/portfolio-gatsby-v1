@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { Link, LinkElement } from '../styled'
 import { Nav, Title, SideLinksContainer } from './styled'
+import { NavbarProps } from '..'
 
-const NavDefault = ({ title, subTitle, leftLinks, rightLinks }) => {
+const NavDefault: FC<NavbarProps> = ({
+  title,
+  subTitle,
+  leftLinks,
+  rightLinks,
+}) => {
   return (
     <Nav>
       <SideLinksContainer>

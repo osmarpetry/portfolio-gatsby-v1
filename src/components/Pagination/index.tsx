@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { FC } from 'react'
 import propTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 import * as S from './styled'
 
-const Pagination = ({
+interface PaginationProps {
+  isFirst: boolean
+  isLast: boolean
+  currentPage: number
+  numPages: number
+  prevPage: string
+  nextPage: string
+}
+
+const Pagination: FC<PaginationProps> = ({
   isFirst,
   isLast,
   currentPage,

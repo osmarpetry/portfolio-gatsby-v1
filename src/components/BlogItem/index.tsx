@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { BlogItemSection, Date, Title, Description, Link } from './styled'
 
-const BlogItem = ({ date, title, description, link }) => (
+interface BlogItemProps {
+  date: string
+  title: string
+  description: string
+  link: string
+}
+
+const BlogItem: FC<BlogItemProps> = ({ date, title, description, link }) => (
   <BlogItemSection>
     <Date>{date}</Date>
     <Title>

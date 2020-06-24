@@ -1,62 +1,17 @@
-import React, { useState } from 'react'
-import styled, { css } from 'styled-components'
+import React, { useState, FC } from 'react'
 
 import NavButton from './NavButton'
 
 import { Link, LinkElement } from '../styled'
+import { NavbarProps } from '..'
+import { NavHead, NavTitle, List, Nav } from './styled'
 
-const Nav = styled.nav`
-  padding: 20px 20px 0 20px;
-`
-
-const NavHead = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 15px;
-`
-
-const List = styled.ul`
-  list-style-type: none;
-  height: 0;
-  margin: 0;
-  display: none;
-  a {
-    opacity: 0;
-  }
-  ${({ open }) =>
-    open &&
-    css`
-      display: block;
-      height: calc(100vh - 100px);
-      a {
-        opacity: 1;
-        font-size: 55px;
-      }
-      li {
-        padding-top: 50px;
-      }
-      li:first-child {
-        padding-top: 50px;
-      }
-    `}
-`
-
-const NavTitle = styled.h1`
-  font-size: 40px;
-  color: #ffffff;
-  white-space: nowrap;
-  display: flex;
-  margin: 0;
-  flex-direction: column;
-  span {
-    font-size: 15px;
-    font-weight: normal;
-    font-variant: normal;
-    padding: 5px 0 0 0;
-  }
-`
-
-const NavMobile = ({ title, subTitle, leftLinks = [], rightLinks = [] }) => {
+const NavMobile: FC<NavbarProps> = ({
+  title,
+  subTitle,
+  leftLinks,
+  rightLinks,
+}) => {
   const [openLinks, setOpenLinks] = useState(false)
 
   return (

@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Media from 'react-media'
 
 import { NavSection } from './styled'
 import NavDefault from './NavDefault'
 import NavMobile from './NavMobile'
 
-const Navbar = ({ title, subTitle, leftLinks, rightLinks }) => (
+interface Link {
+  description: string
+  link: string
+}
+
+export interface NavbarProps {
+  title: string
+  subTitle: string
+  leftLinks: Link[]
+  rightLinks: Link[]
+}
+
+const Navbar: FC<NavbarProps> = ({
+  title,
+  subTitle,
+  leftLinks,
+  rightLinks,
+}) => (
   <NavSection>
     <Media
       queries={{

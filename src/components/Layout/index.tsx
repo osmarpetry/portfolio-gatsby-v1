@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import PropTypes from 'prop-types'
 
 import Navbar from '../Navbar'
@@ -7,7 +7,11 @@ import GlobalStyles from '../../styles/global'
 
 import { Main, Footer } from './styled'
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactElement
+}
+
+const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <GlobalStyles />

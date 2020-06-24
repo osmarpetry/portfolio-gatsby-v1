@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import { StyledAvatar } from './styled'
 
-const Avatar = ({ width, height }) => {
+const Avatar = () => {
   const { avatarImage } = useStaticQuery(
     graphql`
       query {

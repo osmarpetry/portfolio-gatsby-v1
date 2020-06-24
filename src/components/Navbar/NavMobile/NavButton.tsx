@@ -3,18 +3,7 @@ import styled from 'styled-components'
 
 import Close from './../../../images/close.svg'
 import OpenMenu from './../../../images/open-menu.svg'
-
-const Button = styled.button`
-  outline: none;
-  background: none;
-  border: none;
-
-  svg {
-    height: 50px;
-    width: 50px;
-    fill: #ffff;
-  }
-`
+import { NavButtonStyled } from './styled'
 
 const NavButton = ({ onClick }) => {
   const [clicked, setClicked] = useState(false)
@@ -26,9 +15,9 @@ const NavButton = ({ onClick }) => {
 
   return (
     <>
-      <Button onClick={handleClick}>
+      <NavButtonStyled onClick={handleClick}>
         {!clicked ? <OpenMenu /> : <Close />}
-      </Button>
+      </NavButtonStyled>
     </>
   )
 }
