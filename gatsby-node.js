@@ -66,7 +66,7 @@ exports.createPages = ({ graphql, actions }) => {
     posts.forEach(({ node, next, previous }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/templates/blog-post.js`),
+        component: path.resolve(`./src/templates/blog-post.tsx`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
@@ -83,7 +83,7 @@ exports.createPages = ({ graphql, actions }) => {
     Array.from({ length: numPages }).forEach((_, index) => {
       createPage({
         path: index === 0 ? `/` : `/page/${index + 1}`,
-        component: path.resolve(`./src/templates/blog-list.js`),
+        component: path.resolve(`./src/templates/blog-list.tsx`),
         context: {
           limit: postsPerPage,
           skip: index * postsPerPage,

@@ -14,7 +14,12 @@ const AboutMe = () => (
     />
     <Header>
       <Avatar />
-      <Title>Hello, my name is Osmar <span role='img' aria-label='waving hand emoji'>👋</span></Title>
+      <Title>
+        Hello, my name is Osmar{' '}
+        <span role="img" aria-label="waving hand emoji">
+          👋
+        </span>
+      </Title>
     </Header>
     <Paragraph>
       I'm a Brazilian software enginner living in Joinville.
