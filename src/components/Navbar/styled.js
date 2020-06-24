@@ -11,7 +11,6 @@ const LinkStyled = `
   text-decoration: none;
   font-size: 24px;
   text-align: center;
-  width: 100%;
 `
 
 export const Link = styled(GatsbyLink)`

@@ -19,12 +19,14 @@ const List = styled.ul`
   list-style-type: none;
   height: 0;
   margin: 0;
+  display: none;
   a {
     opacity: 0;
   }
   ${({ open }) =>
     open &&
     css`
+      display: block;
       height: calc(100vh - 100px);
       a {
         opacity: 1;
@@ -60,10 +62,12 @@ const NavMobile = ({ title, subTitle, leftLinks = [], rightLinks = [] }) => {
   return (
     <Nav>
       <NavHead>
-        <NavTitle>
-          {title}
-          <span>{subTitle}</span>
-        </NavTitle>
+        <Link to="/">
+          <NavTitle>
+            {title}
+            <span>{subTitle}</span>
+          </NavTitle>
+        </Link>
         <NavButton onClick={() => setOpenLinks(!openLinks)} />
       </NavHead>
       <List open={openLinks}>
