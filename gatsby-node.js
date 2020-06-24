@@ -33,11 +33,9 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              background
               author
               date(locale: "en-us", formatString: "MMMM DD YYYY")
               title
-              image
             }
             timeToRead
           }

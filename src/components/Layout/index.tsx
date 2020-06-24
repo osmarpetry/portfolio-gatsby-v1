@@ -8,7 +8,7 @@ import GlobalStyles from '../../styles/global'
 import { Main, Footer } from './styled'
 
 interface LayoutProps {
-  children: React.ReactElement
+  children: React.ReactNode
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {
