@@ -1,7 +1,7 @@
 ---
 date: 2020-06-23 23:13:00
 title: Who this blog born
-description: Inspirations and techinice I followed to create this blog
+description: Inspirations and techinice I followed to create this blog, and what I expected to have after some months with this blog, my 'journal blog' if I can say.
 author: osmarpetry
 ---
 
@@ -9,7 +9,9 @@ This blog begin with a idea to I have a journal. But not a personal journal, a p
 
 I have a big dificulty to speak lot of words in a text, but I give me a try. I should take care to write somethig that make sanse to the others, because of that I will keep me simple.
 
-Intension of this blog is be a supercional journal about what I'm doing. But let me talk about some insipiratios.
+Intension of this blog is to work as my journal, but also tranning me to write more and better. My Conclasion Thesis on universitry I had lot of dificulty to wrhite the pages (wiht LaTex), and I want to do a master deagree on Apliaed COmputing because of some friends and coleges, for that I must write very well I know a lot of thigs, to absorve the content on master deagre better and faster.
+
+But let me talk about some insipiratios.
 
 ### Lucas Costa - lucascosta.com
 
