@@ -38,7 +38,7 @@ export const List = styled.ul`
 
 export const NavTitle = styled.h1`
   font-size: 40px;
-  color: #ffffff;
+  color: hsla(255, 100%, 100%, 0.8);
   white-space: nowrap;
   display: flex;
   margin: 0;
@@ -59,6 +59,6 @@ export const NavButtonStyled = styled.button`
   svg {
     height: 50px;
     width: 50px;
-    fill: #ffff;
+    fill: hsla(255, 100%, 100%, 0.8);
   }
 `

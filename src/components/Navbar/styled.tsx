@@ -7,7 +7,7 @@ export const NavSection = styled.section`
 `
 
 const LinkStyled = `
-  color: #ffffff;
+  color: hsla(255, 100%, 100%, 0.8);
   text-decoration: none;
   font-size: 24px;
   text-align: center;

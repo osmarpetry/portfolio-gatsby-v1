@@ -18,7 +18,7 @@ export const PaginationWrapper = styled.section`
     text-align: center;
     text-decoration: none;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid hsla(255, 100%, 100%, 0.8);
   }
 
   a:nth-child(2) {

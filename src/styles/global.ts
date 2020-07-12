@@ -11,7 +11,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #002776;
+  background-color: #15202B;
 }
 body {
   margin: 0;
@@ -209,7 +209,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(255, 100%, 100%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -632,7 +632,7 @@ pre tt:after {
 }
 
 main {
-  background: #002776;
+  background: #15202B;
   line-height: 1;
   font-size: 100%;
   font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

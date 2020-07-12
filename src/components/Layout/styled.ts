@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
-  background-color: #ffffff;
+  background-color: #253341;
   padding: 30px;
   border-radius: 10px;
   max-width: 960px;
@@ -10,6 +10,6 @@ export const Main = styled.main`
 `
 
 export const Footer = styled.footer`
-  color: rgb(255, 255, 255, 0.5);
+  color: hsla(255, 100%, 100%, 0.5);
   flex-shrink: 0;
 `

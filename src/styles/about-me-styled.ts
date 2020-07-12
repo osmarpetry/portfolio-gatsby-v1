@@ -12,5 +12,5 @@ export const Title = styled.h2`
 
 export const Paragraph = styled.p`
   font-size: 18px;
-  color: rgb(0, 0, 0, 0.51);
+  color: rgb(255, 255, 255, 0.51);
 `
