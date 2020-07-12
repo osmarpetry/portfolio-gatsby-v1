@@ -14,10 +14,12 @@ const BlogPost = ({ data, pageContext }) => {
     html,
   } = post
 
+  console.log( data.markdownRemark)
   return (
     <Layout>
       <SEO title={title} description={description} />
       <p>{date}</p>
+      <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>
   )
@@ -30,7 +32,9 @@ export const query = graphql`
         slug
       }
       frontmatter {
-        date(locale: "en-us", formatString: "DD[th of] MMMM[,] YYYY")
+        date(locale: "en-us", formatString: "DD[th of] MMMM[,] YYYY"),
+        description,
+        title
       }
       html
     }

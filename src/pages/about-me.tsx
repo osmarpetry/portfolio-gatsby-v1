@@ -9,8 +9,8 @@ import { Header, Title, Paragraph } from '../styles/about-me-styled'
 const AboutMe = () => (
   <Layout>
     <SEO
-      title="My name is Osmar"
-      description="A short description about Osmar"
+      title="About me"
+      description="A short description about Osmar Petry"
     />
     <Header>
       <Avatar />

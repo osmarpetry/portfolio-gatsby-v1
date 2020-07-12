@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Osmar Petry - @osmarpetry`,
+    title: `Osmar Petry`,
     description: `My personal blog`,
-    author: `@osmarpetry`,
+    author: `osmarpetry`,
     siteUrl: `https://osmarpetry.com`,
   },
   plugins: [
