@@ -5,7 +5,7 @@ import Navbar from '../Navbar'
 
 import GlobalStyles from '../../styles/global'
 
-import { Main, Footer } from './styled'
+import { Main, Footer, LayoutWrapper } from './styled'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -13,7 +13,7 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+    <LayoutWrapper>
       <GlobalStyles />
       <header>
         <Navbar
@@ -39,19 +39,13 @@ const Layout: FC<LayoutProps> = ({ children }) => {
       <div>
         <Main>{children}</Main>
       </div>
-      <Footer
-        style={{
-          flexGrow: 1,
-          display: 'flex',
-          flexDirection: 'column-reverse',
-        }}
-      >
-        <p style={{ margin: '20px 0 10px 20px' }}>
+      <Footer>
+        <p>
           © Copyleft - All rights reversed. The internet is free and so is my
           content.
         </p>
       </Footer>
-    </div>
+    </LayoutWrapper>
   )
 }
 
