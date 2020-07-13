@@ -20,7 +20,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
           title="Osmar Petry"
           subTitle="Science is the door for the future"
           leftLinks={[
-            { description: 'My Blog', link: '/' },
+            { description: 'Home', link: '/' },
             { description: 'About me', link: '/about-me' },
           ]}
           rightLinks={[
