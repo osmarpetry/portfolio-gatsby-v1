@@ -46,6 +46,7 @@ const IndexPage = props => {
           },
         }) => (
           <BlogItem
+            key={slug}
             date={date}
             title={title}
             description={description}

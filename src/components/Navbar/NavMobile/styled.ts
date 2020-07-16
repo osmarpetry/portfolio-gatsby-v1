@@ -25,7 +25,7 @@ export const List = styled.ul`
       height: calc(100vh - 100px);
       a {
         opacity: 1;
-        font-size: 55px;
+        font-size: 36px;
       }
       li {
         padding-top: 50px;

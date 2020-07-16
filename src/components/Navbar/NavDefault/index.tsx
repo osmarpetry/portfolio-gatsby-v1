@@ -14,7 +14,7 @@ const NavDefault: FC<NavbarProps> = ({
     <Nav>
       <SideLinksContainer>
         {leftLinks.map(({ description, link }) => (
-          <li>
+          <li key={link}>
             <Link to={link}>{description}</Link>
           </li>
         ))}
@@ -26,7 +26,7 @@ const NavDefault: FC<NavbarProps> = ({
       </Link>
       <SideLinksContainer>
         {rightLinks.map(({ description, link }) => (
-          <li>
+          <li key={link}>
             <LinkElement href={link} target="_blank">
               {description}
             </LinkElement>
