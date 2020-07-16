@@ -11,14 +11,14 @@ export const PaginationWrapper = styled.section`
     border-radius: 5px;
     padding: 10px;
     align-items: center;
-    color: #8899a6;
+    color: ${({theme}) => theme.fontSecondary};
     display: flex;
     height: 60px;
     justify-content: center;
     text-align: center;
     text-decoration: none;
     width: 100%;
-    border: 1px solid hsla(255, 100%, 100%, 0.8);
+    border: 1px solid ${({theme}) => theme.borderColor};
   }
 
   a:nth-child(2) {

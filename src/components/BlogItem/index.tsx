@@ -16,7 +16,7 @@ const BlogItem: FC<BlogItemProps> = ({ date, title, description, link }) => (
       <Link to={link}>{title}</Link>
     </Title>
     <Description>{description}</Description>
-    <Link to={link}>Read ➜</Link>
+    <Link to={link} isSecondary>Read ➜</Link>
   </BlogItemSection>
 )
 

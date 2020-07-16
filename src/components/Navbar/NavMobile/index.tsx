@@ -28,14 +28,14 @@ const NavMobile: FC<NavbarProps> = ({
       <List open={openLinks}>
         {leftLinks.map(link => (
           <li>
-            <Link to={link.link} onClick={() => setOpenLinks(false)}>
+            <Link to={link.link} onClick={() => setOpenLinks(!openLinks)}>
               {link.description}
             </Link>
           </li>
         ))}
         {rightLinks.map(link => (
           <li>
-            <LinkElement to={link.link} onClick={() => setOpenLinks(false)}>
+            <LinkElement href={link.link}>
               {link.description}
             </LinkElement>
           </li>

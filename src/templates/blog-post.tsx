@@ -1,10 +1,13 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react'
+import styled from 'styled-components'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+
+const DateBlogPost = styled.p`
+  color: ${({theme}) => theme.fontSecondary};
+`
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -14,11 +17,10 @@ const BlogPost = ({ data, pageContext }) => {
     html,
   } = post
 
-  console.log( data.markdownRemark)
   return (
     <Layout>
       <SEO title={title} description={description} />
-      <p>{date}</p>
+      <DateBlogPost>{date}</DateBlogPost>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </Layout>

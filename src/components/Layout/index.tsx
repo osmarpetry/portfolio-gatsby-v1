@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import PropTypes from 'prop-types'
+import { ThemeProvider } from 'styled-components'
 
 import Navbar from '../Navbar'
 
@@ -11,9 +12,19 @@ interface LayoutProps {
   children: React.ReactNode
 }
 
+const theme = {
+  primary: '#253341',
+  secondary: '#15202B',
+  borderColor: '#ffff',
+  fontPrimary: '#ffff',
+  fontSecondary: 'rgb(136, 153, 166)'
+}
+
+
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <LayoutWrapper>
+      <ThemeProvider theme={theme}>
       <GlobalStyles />
       <header>
         <Navbar
@@ -45,6 +56,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
           content.
         </p>
       </Footer>
+      </ThemeProvider>
     </LayoutWrapper>
   )
 }

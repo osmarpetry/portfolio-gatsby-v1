@@ -7,16 +7,17 @@ export const NavSection = styled.section`
 `
 
 const LinkStyled = `
-  color: hsla(255, 100%, 100%, 0.8);
   text-decoration: none;
   font-size: 24px;
   text-align: center;
 `
 
 export const Link = styled(GatsbyLink)`
+  color: ${({theme}) => theme.fontPrimary};
   ${LinkStyled}
 `
 
 export const LinkElement = styled.a`
+  color: ${({theme}) => theme.fontPrimary};
   ${LinkStyled}
 `
