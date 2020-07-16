@@ -17,45 +17,44 @@ const theme = {
   secondary: '#15202B',
   borderColor: '#ffff',
   fontPrimary: '#ffff',
-  fontSecondary: 'rgb(136, 153, 166)'
+  fontSecondary: 'rgb(136, 153, 166)',
 }
-
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <LayoutWrapper>
       <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <header>
-        <Navbar
-          title="Osmar Petry"
-          subTitle="Science is the door for the future"
-          leftLinks={[
-            { description: 'Home', link: '/' },
-            { description: 'About me', link: '/about-me' },
-          ]}
-          rightLinks={[
-            { description: 'Email', link: 'mailto:osmarpetry@gmail.com' },
-            {
-              description: 'Github',
-              link: 'https://github.com/osmarpetry',
-            },
-            {
-              description: 'Linkedin',
-              link: 'https://linkedin.com/in/osmarpetry',
-            },
-          ]}
-        />
-      </header>
-      <div>
-        <Main>{children}</Main>
-      </div>
-      <Footer>
-        <p>
-          © Copyleft - All rights reversed. The internet is free and so is my
-          content.
-        </p>
-      </Footer>
+        <GlobalStyles />
+        <header>
+          <Navbar
+            title="Osmar Petry"
+            subTitle="Science is the door for the future"
+            leftLinks={[
+              { description: 'Home', link: '/' },
+              { description: 'About me', link: '/about-me' },
+            ]}
+            rightLinks={[
+              { description: 'Email', link: 'mailto:osmarpetry@gmail.com' },
+              {
+                description: 'Github',
+                link: 'https://github.com/osmarpetry',
+              },
+              {
+                description: 'Linkedin',
+                link: 'https://linkedin.com/in/osmarpetry',
+              },
+            ]}
+          />
+        </header>
+        <div>
+          <Main>{children}</Main>
+        </div>
+        <Footer>
+          <p>
+            © Copyleft - All rights reversed. The internet and my content is
+            free to use.
+          </p>
+        </Footer>
       </ThemeProvider>
     </LayoutWrapper>
   )

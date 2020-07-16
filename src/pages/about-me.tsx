@@ -5,34 +5,28 @@ import SEO from '../components/seo'
 import Avatar from '../components/Avatar'
 
 import { Header, Title, Paragraph } from '../styles/about-me-styled'
+import { Link } from 'gatsby'
 
 const AboutMe = () => (
   <Layout>
-    <SEO
-      title="About me"
-      description="A short description about Osmar Petry"
-    />
+    <SEO title="About me" description="A short description about Osmar Petry" />
     <Header>
       <Avatar />
       <Title>
-        Hello, my name is Osmar{' '}
+        Hello, my name is Osmar &nbsp;
         <span role="img" aria-label="waving hand emoji">
           👋
         </span>
       </Title>
     </Header>
     <Paragraph>
-      I'm a Brazilian software enginner living in Joinville.
+      I'm a Brazilian software engineer living in Joinville. Working with web technologies since 2017.
     </Paragraph>
     <Paragraph>
       I write Javascript most of the time, always studying to evolve
       technically.
     </Paragraph>
-    <Paragraph>
-      Content that I own is always up for grabs. Universities and online courses
-      use some of these posts as reference material, and you can do the same if
-      you want.
-    </Paragraph>
+    <Paragraph>The idea behind this blog, is to work as a journal for me. For more details read <Link href='/how-this-blog-was-born/' target='_blank'>this blog post</Link>.</Paragraph>
     <Paragraph>
       Everything I produce belongs to the internet. It has made me who I am,
       and, therefore, it deserves all I have.
