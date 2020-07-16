@@ -51,11 +51,14 @@ template {
 }
 a {
   background-color: transparent;
+  color: rgb(27, 149, 224);
+  text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  text-decoration: underline;
 }
 abbr[title] {
   border-bottom: none;
