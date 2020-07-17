@@ -3,6 +3,7 @@ date: 2020-06-23 23:13:00
 title: How this blog was born
 description: Inspirations and technic I followed to create this blog, and what I expected to have after some months with this blog, my 'journal blog' if I can say.
 author: osmarpetry
+image: /assets/img/cover.png
 ---
 
 This blog began with an idea to be a journal, but not a personal journal, a public journal, where I will post everything I'm doing, superficially.

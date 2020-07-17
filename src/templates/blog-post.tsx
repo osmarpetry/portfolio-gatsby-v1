@@ -6,20 +6,20 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
 const DateBlogPost = styled.p`
-  color: ${({theme}) => theme.fontSecondary};
+  color: ${({ theme }) => theme.fontSecondary};
 `
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
 
   const {
-    frontmatter: { title, description, date },
+    frontmatter: { title, description, date, image },
     html,
   } = post
 
   return (
     <Layout>
-      <SEO title={title} description={description} />
+      <SEO title={title} description={description} image={image} />
       <DateBlogPost>{date}</DateBlogPost>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }}></div>
@@ -34,9 +34,10 @@ export const query = graphql`
         slug
       }
       frontmatter {
-        date(locale: "en-us", formatString: "DD[th of] MMMM[,] YYYY"),
-        description,
+        date(locale: "en-us", formatString: "DD[th of] MMMM[,] YYYY")
+        description
         title
+        image
       }
       html
     }
