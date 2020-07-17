@@ -62,11 +62,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Osmar Petry`,
+        short_name: `osmarpetry`,
         start_url: `/`,
         background_color: `#15202B`,
         theme_color: `#253341`,
