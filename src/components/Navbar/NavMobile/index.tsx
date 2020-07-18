@@ -15,7 +15,7 @@ const NavMobile: FC<NavbarProps> = ({
   const [openLinks, setOpenLinks] = useState(false)
 
   return (
-    <Nav>
+    <Nav className='navMobile'>
       <NavHead>
         <Link to="/">
           <NavTitle>
