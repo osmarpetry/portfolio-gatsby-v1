@@ -11,7 +11,7 @@ const NavDefault: FC<NavbarProps> = ({
   rightLinks,
 }) => {
   return (
-    <Nav className='navDefault'>
+    <Nav className="navDefault">
       <SideLinksContainer>
         {leftLinks.map(({ description, link }) => (
           <li key={link}>
