@@ -17,7 +17,7 @@ const theme = {
   secondary: '#15202B',
   borderColor: '#ffff',
   fontPrimary: '#ffff',
-  fontSecondary: 'rgb(136, 153, 166)',
+  fontSecondary: 'rgb(232, 232, 232)',
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {

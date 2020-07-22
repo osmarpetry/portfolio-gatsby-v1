@@ -20,13 +20,17 @@ const AboutMe = () => (
       </Title>
     </Header>
     <Paragraph>
-      I'm a Brazilian software engineer living in Joinville. Working with web technologies since 2017.
+      I'm a Brazilian software engineer living in Joinville. Working with web
+      technologies since 2017.
     </Paragraph>
     <Paragraph>
       I write Javascript most of the time, always studying to evolve
       technically.
     </Paragraph>
-    <Paragraph>The idea behind this blog, is to work as a journal for me. For more details read <Link href='/how-this-blog-was-born/' target='_blank'>this blog post</Link>.</Paragraph>
+    <Paragraph>
+      The idea behind this blog, is to work as a journal for me. For more
+      details read <Link to="/how-this-blog-was-born/">this blog post</Link>.
+    </Paragraph>
     <Paragraph>
       Everything I produce belongs to the internet. It has made me who I am,
       and, therefore, it deserves all I have.

@@ -15,7 +15,7 @@ const NavButton = ({ onClick }) => {
 
   return (
     <>
-      <NavButtonStyled onClick={handleClick}>
+      <NavButtonStyled aria-label='nav-toggle-button' onClick={handleClick}>
         {!clicked ? <OpenMenu /> : <Close />}
       </NavButtonStyled>
     </>

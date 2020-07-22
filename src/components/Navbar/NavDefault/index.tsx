@@ -27,7 +27,7 @@ const NavDefault: FC<NavbarProps> = ({
       <SideLinksContainer>
         {rightLinks.map(({ description, link }) => (
           <li key={link}>
-            <LinkElement href={link} target="_blank">
+            <LinkElement href={link} target="_blank" rel="noopener">
               {description}
             </LinkElement>
           </li>
