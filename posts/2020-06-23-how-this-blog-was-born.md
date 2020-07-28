@@ -14,7 +14,7 @@ Intention of this blog is to work as my journal, but also training me to write m
 
 But let me talk about some inspirations.
 
-### Lucas Costa - <a href="https://lucasfcosta.com/" target="_blank" rel="noopener" >lucascosta.com</a>
+### Lucas Costa - <a href="https://lucasfcosta.com/" target="_blank" rel="noopener"  >lucascosta.com</a>
 
 I know Lucas Costa from my first TDC on Florianópolis, he probably doesn't know me. I tried to keep this blog stupid simple, for maintenance and for reading, like he did.
 
@@ -30,7 +30,7 @@ Something very similar is the blog list, very simple and clear.
 
 I love his content about tests, he did the unit test, it is something very simple and useful. It was focus on the final result, instead of taking multiple hours to test each corner of the implementation code (like state on React).
 
-### William Justen -<a href="https://willianjusten.com.br/" target="_blank" rel="noopener" >willianjusten.com.br</a>
+### William Justen - <a href="https://willianjusten.com.br/" target="_blank" rel="noopener" >willianjusten.com.br</a>
 
 This case is not the blog visual, but his course on Udemy. It helps me to understand better how to work with Gatsby to have a simple blog implementation.
 
