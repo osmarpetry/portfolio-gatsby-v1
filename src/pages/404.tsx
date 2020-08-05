@@ -34,7 +34,7 @@ const NotFoundPage = () => {
 
   return (
     <Layout>
-      <SEO title="Page not found" />
+      <SEO title="Page not found"  description="Page not found, back to home page"/>
       <NotFoundLayout>
         <h1>Page NOT FOUND!</h1>
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
