@@ -37,7 +37,10 @@ const IndexPage = props => {
 
   return (
     <Layout>
-      <SEO title="Home" description="Home page you can find all my publications" />
+      <SEO
+        title="Home"
+        description="Osmar Petry, software engineer. This site is a personal journal where you can find almost all my work and studies."
+      />
       {postList.map(
         ({
           node: {

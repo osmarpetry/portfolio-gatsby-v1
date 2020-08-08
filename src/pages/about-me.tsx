@@ -9,7 +9,10 @@ import { Link } from 'gatsby'
 
 const AboutMe = () => (
   <Layout>
-    <SEO title="About me" description="A short description about Osmar Petry" />
+    <SEO
+      title="About me"
+      description="A short description about Osmar Petry, software engineer. This site is a personal journal where you can find almost all his work and studies."
+    />
     <Header>
       <Avatar />
       <Title>
