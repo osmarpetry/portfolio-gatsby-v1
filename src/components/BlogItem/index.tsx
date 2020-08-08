@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import { BlogItemSection, Date, Title, Description, Link } from './styled'
+import { BlogItemSection, Date, Title, Description, Link, Read } from './styled'
 
 interface BlogItemProps {
   date: string
@@ -11,13 +11,15 @@ interface BlogItemProps {
 
 const BlogItem: FC<BlogItemProps> = ({ date, title, description, link }) => (
   <BlogItemSection>
+    <Link to={link}>
     <Date>{date}</Date>
     <Title>
       <Link to={link}>{title}</Link>
     </Title>
     <Description>{description}</Description>
-    <Link to={link} issecondary="true">
+    <Read>
       Read ➜
+    </Read>
     </Link>
   </BlogItemSection>
 )

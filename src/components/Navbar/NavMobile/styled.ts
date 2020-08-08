@@ -43,11 +43,12 @@ export const NavTitle = styled.h1`
   display: flex;
   margin: 0;
   flex-direction: column;
+  text-align: left;
   span {
     font-size: 15px;
     font-weight: normal;
     font-variant: normal;
-    padding: 5px 0 0 0;
+    margin: 5px 0 0 4px;
   }
 `
 
