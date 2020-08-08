@@ -24,7 +24,7 @@ export const Footer = styled.footer`
 
   p {
     @media only screen and (max-width: 959px) {
-      margin: 20px 0 10px 0;
+      margin: 20px 0 10px 10px;
     }
     @media only screen and (min-width: 960px) {
       margin: 20px 0 10px 20px;
