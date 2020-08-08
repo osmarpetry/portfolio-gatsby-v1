@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
+import { Link } from 'gatsby'
 
-import { BlogItemSection, Date, Title, Description, Link, Read } from './styled'
+import { BlogItemSection, Date, Title, Description, Read } from './styled'
 
 interface BlogItemProps {
   date: string
@@ -12,14 +13,10 @@ interface BlogItemProps {
 const BlogItem: FC<BlogItemProps> = ({ date, title, description, link }) => (
   <BlogItemSection>
     <Link to={link}>
-    <Date>{date}</Date>
-    <Title>
-      <Link to={link}>{title}</Link>
-    </Title>
-    <Description>{description}</Description>
-    <Read>
-      Read ➜
-    </Read>
+      <Date>{date}</Date>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+      <Read>Read ➜</Read>
     </Link>
   </BlogItemSection>
 )

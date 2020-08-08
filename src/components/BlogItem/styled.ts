@@ -15,12 +15,10 @@ export const Date = styled.p`
 `
 
 export const Title = styled.h3`
-  * {
-    font-size: 20px;
-    padding-top: 5px;
-    color: ${({ theme }) => theme.fontPrimary};
-    font-weight: bold;
-  }
+  font-size: 20px;
+  padding-top: 5px;
+  color: ${({ theme }) => theme.fontPrimary};
+  font-weight: bold;
 `
 
 export const Description = styled.p`
@@ -32,12 +30,4 @@ export const Read = styled.p`
   color: ${({ theme }) => theme.fontSecondary};
   margin: 0;
   font-weight: bold;
-`
-
-export const Link = styled(GatsbyLink)<{ issecondary?: boolean }>`
-  //margin-top: 10px;
-  //font-weight: bold;
-  //color: ${({ theme, issecondary }) =>
-    issecondary ? theme.fontSecondary : theme.fontPrimary};
-  //text-decoration: none;
 `
