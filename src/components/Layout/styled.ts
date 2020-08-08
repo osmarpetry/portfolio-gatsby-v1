@@ -23,6 +23,11 @@ export const Footer = styled.footer`
   flex-direction: column-reverse;
 
   p {
-    margin: 20px 0 10px 20px;
+    @media only screen and (max-width: 959px) {
+      margin: 20px 0 10px 0;
+    }
+    @media only screen and (min-width: 960px) {
+      margin: 20px 0 10px 20px;
+    }
   }
 `
