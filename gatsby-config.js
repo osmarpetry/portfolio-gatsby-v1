@@ -6,8 +6,25 @@ module.exports = {
     siteUrl: `https://osmarpetry.com`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-KQ64DC7",
+        includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sentry",
+      options: {
+        dsn: "https://631e567bf17443d59ad4358880352360@o431471.ingest.sentry.io/5382606",
+        // Optional settings, see https://docs.sentry.io/clients/node/config/#optional-settings
+        environment: process.env.NODE_ENV,
+        enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,11 +78,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Osmar Petry`,
+        short_name: `osmarpetry`,
         start_url: `/`,
         background_color: `#15202B`,
         theme_color: `#253341`,

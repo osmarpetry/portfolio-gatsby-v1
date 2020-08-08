@@ -15,7 +15,7 @@ const NavMobile: FC<NavbarProps> = ({
   const [openLinks, setOpenLinks] = useState(false)
 
   return (
-    <Nav>
+    <Nav className="navMobile">
       <NavHead>
         <Link to="/">
           <NavTitle>
@@ -23,7 +23,10 @@ const NavMobile: FC<NavbarProps> = ({
             <span>{subTitle}</span>
           </NavTitle>
         </Link>
-        <NavButton onClick={() => setOpenLinks(!openLinks)} />
+        <NavButton
+          aria-label="navButtonToggle"
+          onClick={() => setOpenLinks(!openLinks)}
+        />
       </NavHead>
       <List open={openLinks}>
         {leftLinks.map(link => (
@@ -35,7 +38,7 @@ const NavMobile: FC<NavbarProps> = ({
         ))}
         {rightLinks.map(link => (
           <li key={link.link}>
-            <LinkElement href={link.link}>
+            <LinkElement href={link.link} target="_blank" rel="noopener">
               {link.description}
             </LinkElement>
           </li>

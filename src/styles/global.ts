@@ -51,7 +51,7 @@ template {
 }
 a {
   background-color: transparent;
-  color: rgb(27, 149, 224);
+  color: rgb(140, 201, 242);
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }

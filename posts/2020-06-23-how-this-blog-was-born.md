@@ -3,6 +3,7 @@ date: 2020-06-23 23:13:00
 title: How this blog was born
 description: Inspirations and technic I followed to create this blog, and what I expected to have after some months with this blog, my 'journal blog' if I can say.
 author: osmarpetry
+image: /assets/img/cover.png
 ---
 
 This blog began with an idea to be a journal, but not a personal journal, a public journal, where I will post everything I'm doing, superficially.
@@ -13,7 +14,7 @@ Intention of this blog is to work as my journal, but also training me to write m
 
 But let me talk about some inspirations.
 
-### Lucas Costa - [https://lucasfcosta.com/](lucascosta.com)
+### Lucas Costa - <a href="https://lucasfcosta.com/" target="_blank" rel="noopener"  >lucascosta.com</a>
 
 I know Lucas Costa from my first TDC on Florianópolis, he probably doesn't know me. I tried to keep this blog stupid simple, for maintenance and for reading, like he did.
 
@@ -21,7 +22,7 @@ My blog got a lot of inspiration from his blog. I have a very similar header, fo
 
 I hope that I have awesome content like that he has, on my blog. He is also one of my inspirations, because of his blog and his open-source contributions.
 
-### Kent C. Dodds - [https://kentcdodds.com/](kentcdodds.com)
+### Kent C. Dodds - <a href="https://kentcdodds.com/" target="_blank" rel="noopener">kentcdodds.com</a>
 
 I was trying to find the best color for my blog, something different. Then I found his blog’s color, it was the best, so I tried the same hex color of the blue color of Brazilian flag. But after a talk with my girlfriend, she convinced me to replace blue with white, to a dark with dim theme as default.
 
@@ -29,7 +30,7 @@ Something very similar is the blog list, very simple and clear.
 
 I love his content about tests, he did the unit test, it is something very simple and useful. It was focus on the final result, instead of taking multiple hours to test each corner of the implementation code (like state on React).
 
-### William Justen - [https://willianjusten.com.br/](https://willianjusten.com.br/)
+### William Justen - <a href="https://willianjusten.com.br/" target="_blank" rel="noopener" >willianjusten.com.br</a>
 
 This case is not the blog visual, but his course on Udemy. It helps me to understand better how to work with Gatsby to have a simple blog implementation.
 

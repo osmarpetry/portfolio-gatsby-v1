@@ -7,7 +7,7 @@ export const LayoutWrapper = styled.div`
 `
 
 export const Main = styled.main`
-  background-color: ${({theme}) => theme.primary};
+  background-color: ${({ theme }) => theme.primary};
   padding: 30px;
   border-radius: 10px;
   max-width: 960px;
@@ -16,7 +16,7 @@ export const Main = styled.main`
 `
 
 export const Footer = styled.footer`
-  color: ${({theme}) => theme.fontSecondary};
+  color: ${({ theme }) => theme.fontSecondary};
   flex-shrink: 0;
   flex-grow: 1;
   display: flex;

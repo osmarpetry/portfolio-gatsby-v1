@@ -37,7 +37,7 @@ const IndexPage = props => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" description="Home page has my publications" />
       {postList.map(
         ({
           node: {
