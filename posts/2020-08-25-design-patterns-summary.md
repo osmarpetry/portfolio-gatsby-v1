@@ -3,7 +3,7 @@ date: 2020-08-25 21:43:00
 title: A Design Patterns summary
 description: Design Patterns summary from the gang of four Desing Pattern book.
 author: osmarpetry
-image: /assets/img/designPaterns.png
+image: /assets/img/cover.png
 ---
 
 In the place I work, I was developing new skills. One of these skills is about Design Patterns.
