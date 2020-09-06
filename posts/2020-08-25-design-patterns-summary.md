@@ -8,7 +8,7 @@ image: /assets/img/design-patterns-cover.png
 
 In the place I work, I was developing new skills. One of these skills is about Design Patterns.
 After creating this goal for me, was decided to make a presentation about some Design Patterns for my POD in Brazil and to the subsidiary on my city Joinville. But in the end, I created a presentation about all Design Patterns in the book of the gang of four.
-In this publication, I will write what I used to help me in the presentation, will not be code. For that, I think is better you go to [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns), where you can have a unique example of the pattern in your favorite language.
+In this publication, I will write what I used to help me in the presentation, will not be code. For that, I think is better you go to: [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns), where you can have a unique example of the pattern in your favorite language.
 
 ### First things firsts
 The idea you know differents design patterns, in my opinion, is to you have a commonplace for everyone to write in the same pattern between different projects. Will be easier in the future to other new developers in the project to fully understand the code pattern that your team is using. I don't mean those patterns are the best, maybe a unique design pattern to your project would be better, but your team should have good documentation with example and covering corner cases in your unique design pattern.
