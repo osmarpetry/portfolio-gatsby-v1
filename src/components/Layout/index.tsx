@@ -28,7 +28,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
         <header>
           <Navbar
             title="Osmar Petry"
-            subTitle="Science is the door for the future"
+            subTitle="Professional developer with amateur publications"
             leftLinks={[
               { description: 'Home', link: '/' },
               { description: 'About me', link: '/about-me' },
