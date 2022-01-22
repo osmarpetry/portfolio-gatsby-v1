@@ -31,10 +31,10 @@ const Layout: FC<LayoutProps> = ({ children }) => {
             subTitle="Professional developer with amateur publications"
             leftLinks={[
               { description: 'Home', link: '/' },
+              { description: 'Newsletter', link: '/newsletter' },
               { description: 'About me', link: '/about-me' },
             ]}
             rightLinks={[
-              { description: 'Email', link: 'mailto:osmarpetry@gmail.com' },
               {
                 description: 'Github',
                 link: 'https://github.com/osmarpetry',
